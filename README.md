@@ -17,18 +17,11 @@ decision, and keeps subagent fan-out in the parent. Why that shape:
 ./install.sh
 ```
 
-Symlinks `skills/*` into `~/.agents/skills/` and `~/.grok/skills/`,
-and `agents/hstack-agent.md` into `~/.grok/agents/`. Does not edit
-`config.toml` or `AGENTS.md`. Re-run after new skills appear.
-
-Grok, as a plugin instead of (or besides) the links:
-
-```bash
-grok plugin install /Users/kevin/src/hstack --trust
-```
-
-Amp: the `~/.agents/skills` links, or add `~/src/hstack/skills` to
-its skill path.
+Symlinks `skills/*` into `~/.codex/skills/` and
+`~/.claude/skills/`, and `agents/hstack-agent.md` into
+`~/.claude/agents/`. `CODEX_HOME` and `CLAUDE_CONFIG_DIR` override
+the corresponding home directories. Does not edit `config.toml`,
+`AGENTS.md`, or `CLAUDE.md`. Re-run after new skills appear.
 
 ## Setup
 
@@ -88,7 +81,7 @@ skills/how prove setup-hstack help
 skills/<name>/                       situational; /help lists them
 skills/create-verification-skill/    owns verify-* contract
 skills/maintain-verification-skill/
-agents/hstack-agent.md              Grok child; no nested spawn
+agents/hstack-agent.md              Claude child; no nested spawn
 docs/why.md                          design argument
 ```
 

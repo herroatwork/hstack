@@ -13,14 +13,14 @@ description: >
 Confirm these paths exist and point at this repo's `skills/` tree
 (symlinks are expected):
 
-- `~/.agents/skills/hstack/SKILL.md`
-- `~/.grok/skills/hstack/SKILL.md` if this user runs Grok Build
+- `~/.codex/skills/hstack/SKILL.md`
+- `~/.claude/skills/hstack/SKILL.md`
 
 If they are missing, tell the user to run `./install.sh` from the
 hstack repo. Do not run `install.sh` unless they ask.
 
-On Grok, also confirm `hstack-agent` is listed as an agent type, or
-that `~/.grok/agents/hstack-agent.md` exists.
+On Claude, also confirm `hstack-agent` is listed as an agent type, or
+that `~/.claude/agents/hstack-agent.md` exists.
 
 ## 2. Models
 

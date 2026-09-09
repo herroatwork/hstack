@@ -15,7 +15,7 @@ Print the hstack catalog. Do not invent rows.
 
 1. Find this skill's directory (the folder that contains this
    SKILL.md). Prefer the path the harness loaded. Fall back to
-   `~/.grok/skills/help` or `~/.agents/skills/help`.
+   `~/.codex/skills/help` or `~/.claude/skills/help`.
 2. Run `scripts/list.sh` from that directory.
 3. Reply with the script's stdout. No extra catalog. Do not
    paraphrase descriptions.

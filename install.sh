@@ -1,15 +1,15 @@
 #!/usr/bin/env bash
-# Link hstack skills into the Agent Skills locations Amp and Grok scan.
-# Does not edit config.toml or AGENTS.md.
+# Link hstack skills into the user locations Codex and Claude scan.
+# Does not edit config.toml, AGENTS.md, or CLAUDE.md.
 set -euo pipefail
 
 ROOT="$(cd "$(dirname "$0")" && pwd)"
-AGENTS_SKILLS="${HSTACK_AGENTS_SKILLS:-$HOME/.agents/skills}"
-GROK_HOME="${GROK_HOME:-$HOME/.grok}"
-GROK_SKILLS="$GROK_HOME/skills"
-GROK_AGENTS="$GROK_HOME/agents"
+CODEX_SKILLS="${CODEX_HOME:-$HOME/.codex}/skills"
+CLAUDE_CONFIG_ROOT="${CLAUDE_CONFIG_DIR:-$HOME/.claude}"
+CLAUDE_SKILLS="$CLAUDE_CONFIG_ROOT/skills"
+CLAUDE_AGENTS="$CLAUDE_CONFIG_ROOT/agents"
 
-mkdir -p "$AGENTS_SKILLS" "$GROK_SKILLS" "$GROK_AGENTS"
+mkdir -p "$CODEX_SKILLS" "$CLAUDE_SKILLS" "$CLAUDE_AGENTS"
 
 link_dir() {
   local src="$1"
@@ -20,18 +20,18 @@ link_dir() {
 
 for d in "$ROOT"/skills/*/; do
   name="$(basename "$d")"
-  link_dir "$d" "$AGENTS_SKILLS/$name"
-  link_dir "$d" "$GROK_SKILLS/$name"
+  link_dir "$d" "$CODEX_SKILLS/$name"
+  link_dir "$d" "$CLAUDE_SKILLS/$name"
 done
 
 if [[ -d "$ROOT/agents" ]]; then
   for a in "$ROOT"/agents/*.md; do
     [[ -e "$a" ]] || continue
-    link_dir "$a" "$GROK_AGENTS/$(basename "$a")"
+    link_dir "$a" "$CLAUDE_AGENTS/$(basename "$a")"
   done
 fi
 
 printf '\nhstack installed for this user.\n'
-printf 'Amp:  ~/.agents/skills\n'
-printf 'Grok: ~/.grok/skills and ~/.grok/agents\n'
+printf 'Codex:  %s\n' "$CODEX_SKILLS"
+printf 'Claude: %s and %s\n' "$CLAUDE_SKILLS" "$CLAUDE_AGENTS"
 printf 'Next: open a session and run /setup-hstack\n'
