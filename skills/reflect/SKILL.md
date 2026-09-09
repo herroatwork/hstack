@@ -15,12 +15,12 @@ parent followed.
 ## Steps
 
 1. Locate this session's transcript from the harness adapter
-   ([mestack/references/grok.md](../mestack/references/grok.md),
-   [mestack/references/amp.md](../mestack/references/amp.md)). Match
+   ([hstack/references/grok.md](../hstack/references/grok.md),
+   [hstack/references/amp.md](../hstack/references/amp.md)). Match
    the opening user prompt. If no file resolves, write a short digest
    and use that. Do not read other workspaces.
 2. Spawn two or three read-only children in one turn, per
-   [mestack/references/harness.md](../mestack/references/harness.md).
+   [hstack/references/harness.md](../hstack/references/harness.md).
    `explore`. Models from the `reviewers` list when present; omit
    `model` to inherit. Dropouts stay named. Lenses:
    - **Judgment.** What should have been a rule, and where it lives.

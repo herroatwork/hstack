@@ -13,7 +13,7 @@ Stress a change with independent read-only reviewers. The parent
 judges. Do not auto-apply.
 
 The `reviewers` list in
-[mestack/references/models.md](../mestack/references/models.md) is
+[hstack/references/models.md](../hstack/references/models.md) is
 the panel. Empty list: the parent reviews once, labeled `parent`.
 A slug this session cannot run is a dropout. Do not substitute.
 
@@ -27,7 +27,7 @@ A slug this session cannot run is a dropout. Do not substitute.
    intent, not the intent itself. If intent is unclear, ask.
 3. Spawn. Parent launches one read-only child per remaining reviewer
    in one turn, per
-   [mestack/references/harness.md](../mestack/references/harness.md).
+   [hstack/references/harness.md](../hstack/references/harness.md).
    `explore`. Isolation `none`. Unique is not required; they must not
    write. Same brief for every child: intent, scope, and
    [references/rubric.md](references/rubric.md). Fill

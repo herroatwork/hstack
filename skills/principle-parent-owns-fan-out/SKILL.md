@@ -1,6 +1,6 @@
 ---
 name: principle-parent-owns-fan-out
-description: Only the parent session spawns workers. Used by mestack for any parallel work.
+description: Only the parent session spawns workers. Used by hstack for any parallel work.
 user-invocable: false
 ---
 

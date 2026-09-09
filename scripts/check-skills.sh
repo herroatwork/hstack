@@ -48,8 +48,8 @@ for skill_dir in "$ROOT"/skills/*/; do
   fi
 done
 
-if [[ ! -f "$ROOT/skills/mestack/SKILL.md" ]]; then
-  fail "missing entry skill skills/mestack/SKILL.md"
+if [[ ! -f "$ROOT/skills/hstack/SKILL.md" ]]; then
+  fail "missing entry skill skills/hstack/SKILL.md"
 fi
 
 help_list="$ROOT/skills/help/scripts/list.sh"
@@ -68,7 +68,7 @@ else
 fi
 
 for pb in investigate fix build reshape leave-running; do
-  if [[ ! -f "$ROOT/skills/mestack/playbooks/$pb.md" ]]; then
+  if [[ ! -f "$ROOT/skills/hstack/playbooks/$pb.md" ]]; then
     fail "missing playbook $pb.md"
   fi
 done

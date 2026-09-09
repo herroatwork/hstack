@@ -22,4 +22,4 @@ one.
 
 `<slug>` is a valid skill name: lowercase letters, digits, hyphens,
 2–64 characters, matching the directory and the frontmatter `name`.
-Prefer the app or binary name (`verify-limen`, `verify-mestack`).
+Prefer the app or binary name (`verify-limen`, `verify-hstack`).

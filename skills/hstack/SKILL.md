@@ -1,15 +1,15 @@
 ---
-name: mestack
+name: hstack
 description: >
   Kevin's rigor-first dispatcher for Amp and Grok Build. Picks a playbook,
-  applies mestack principles, and keeps subagent fan-out in the parent.
-  Use for /mestack, mestack-mode, or non-trivial engineering work (bug,
+  applies hstack principles, and keeps subagent fan-out in the parent.
+  Use for /hstack, hstack-mode, or non-trivial engineering work (bug,
   feature, refactor, investigation, overnight run).
 disable-model-invocation: true
 argument-hint: goal and how you will know it is done
 ---
 
-# mestack
+# hstack
 
 Read [references/harness.md](references/harness.md) once per task before
 spawning anything.

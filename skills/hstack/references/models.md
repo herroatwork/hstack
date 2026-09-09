@@ -1,14 +1,14 @@
 # Models
 
-Optional override file: `~/.agents/mestack-models.md`.
+Optional override file: `~/.agents/hstack-models.md`.
 
-`/setup-mestack` writes it. A missing file, or a missing role line,
+`/setup-hstack` writes it. A missing file, or a missing role line,
 means inherit the parent session model.
 
 ## Shape
 
 ```text
-# mestack model overrides. Delete a line to inherit the parent.
+# hstack model overrides. Delete a line to inherit the parent.
 code: inherit-parent
 judgment: inherit-parent
 reviewers:

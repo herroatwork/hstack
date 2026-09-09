@@ -1,15 +1,15 @@
 ---
 name: help
 description: >
-  Print a table of the current mestack skills and a short
-  description of each. Use for /help, "list mestack skills",
-  or "what can mestack do".
+  Print a table of the current hstack skills and a short
+  description of each. Use for /help, "list hstack skills",
+  or "what can hstack do".
 disable-model-invocation: true
 ---
 
 # Help
 
-Print the mestack catalog. Do not invent rows.
+Print the hstack catalog. Do not invent rows.
 
 ## Steps
 

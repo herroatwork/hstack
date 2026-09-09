@@ -1,6 +1,6 @@
-# Why mestack is shaped this way
+# Why hstack is shaped this way
 
-Mestack is one skill tree that Amp and Grok Build both load. Skills
+Hstack is one skill tree that Amp and Grok Build both load. Skills
 are procedures. This file is the argument for the load-bearing
 choices. If a rule and this memo disagree, the skill that owns the
 rule wins; fix this file.
@@ -15,7 +15,7 @@ two failures illegal.
 You ask:
 
 ```text
-/mestack the export writes duplicate rows when a retry lands mid-run.
+/hstack the export writes duplicate rows when a retry lands mid-run.
 repro first, then fix and verify. text output stays byte-identical
 when --json is off.
 ```
@@ -41,7 +41,7 @@ fixes the first. A project `verify-*` skill fixes the second.
 
 1. **One skill tree, two parents.** Amp and Grok must load the same
    `SKILL.md` files. Harness tool names live only in
-   `skills/mestack/references/`.
+   `skills/hstack/references/`.
 2. **The parent owns every spawn.** Children never spawn. Writers do
    not share a writable path.
 3. **One home per fact.** A search path, a playbook step, a model
@@ -53,14 +53,14 @@ fixes the first. A project `verify-*` skill fixes the second.
    asked.
 
 Amp's spawn depth is not documented as one. Invariant 2 is still a
-mestack rule there, so the same playbooks run on both parents. That
+hstack rule there, so the same playbooks run on both parents. That
 is a preference on Amp and a platform fact on Grok.
 
 ## Mechanism
 
 ### Dispatcher
 
-`/mestack` matches a playbook and copies its steps into the todo
+`/hstack` matches a playbook and copies its steps into the todo
 list. Principles are leaves; the dispatcher only indexes them. If
 the work is "understand / change / prove" on the export bug, the
 playbook is `fix`: reproduce on the binary, patch the cause, prove
@@ -115,7 +115,7 @@ Outcomes are `clean`, `changed`, or `blocked`.
 **Vendor pstack or open-pstack.** pstack is MIT; copying is legal.
 Its skill bodies name Cursor `Task`, sticky mode, cloud agents, and
 `~/.cursor/rules/*.mdc`. Those strings do not resolve here. A
-mechanical substitute table is a second product to sync. mestack
+mechanical substitute table is a second product to sync. hstack
 keeps the problem (throughput without a checkable finish condition)
 and writes procedures that name Amp and Grok primitives in one
 adapter layer. The cost is less playbook coverage (no arena or
@@ -141,7 +141,7 @@ write is a second home.
 
 ## Limits
 
-There is no eval in this repo that mestack reduces defect rate or
+There is no eval in this repo that hstack reduces defect rate or
 token cost against a bare session. The claim is narrower: the
 illegal states above cannot be produced while the skills are
 followed.
@@ -153,11 +153,11 @@ spawns with unique worktrees, not a named playbook yet.
 
 Amp spawn depth is assumed, not cited from Amp docs. If Amp later
 documents nested agents as supported, invariant 2 still stands as a
-mestack rule so playbooks stay dual-harness.
+hstack rule so playbooks stay dual-harness.
 
 ## Conclusion
 
-Load mestack as skills. Run `/mestack` for non-trivial work. Put
+Load hstack as skills. Run `/hstack` for non-trivial work. Put
 app-specific drive recipes in the app repo under
 `.agents/skills/verify-<app>/`. Keep arguments in this file and
 orders in `SKILL.md`.

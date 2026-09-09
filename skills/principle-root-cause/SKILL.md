@@ -1,6 +1,6 @@
 ---
 name: principle-root-cause
-description: Reproduce first and fix the cause, not the symptom. Used by mestack while debugging.
+description: Reproduce first and fix the cause, not the symptom. Used by hstack while debugging.
 user-invocable: false
 ---
 

@@ -25,7 +25,7 @@ These rules hold on every parent:
 4. Review the child's diff yourself. Do not pass through its summary.
 5. A missing model, failed child, or dropped worker is a named dropout.
    Do not silently substitute another model.
-6. Model overrides live in `~/.agents/mestack-models.md` when present.
+6. Model overrides live in `~/.agents/hstack-models.md` when present.
    See [models.md](models.md). Absent file means inherit the parent
    model.
 

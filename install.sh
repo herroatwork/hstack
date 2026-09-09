@@ -1,10 +1,10 @@
 #!/usr/bin/env bash
-# Link mestack skills into the Agent Skills locations Amp and Grok scan.
+# Link hstack skills into the Agent Skills locations Amp and Grok scan.
 # Does not edit config.toml or AGENTS.md.
 set -euo pipefail
 
 ROOT="$(cd "$(dirname "$0")" && pwd)"
-AGENTS_SKILLS="${MESTACK_AGENTS_SKILLS:-$HOME/.agents/skills}"
+AGENTS_SKILLS="${HSTACK_AGENTS_SKILLS:-$HOME/.agents/skills}"
 GROK_HOME="${GROK_HOME:-$HOME/.grok}"
 GROK_SKILLS="$GROK_HOME/skills"
 GROK_AGENTS="$GROK_HOME/agents"
@@ -31,7 +31,7 @@ if [[ -d "$ROOT/agents" ]]; then
   done
 fi
 
-printf '\nmestack installed for this user.\n'
+printf '\nhstack installed for this user.\n'
 printf 'Amp:  ~/.agents/skills\n'
 printf 'Grok: ~/.grok/skills and ~/.grok/agents\n'
-printf 'Next: open a session and run /setup-mestack\n'
+printf 'Next: open a session and run /setup-hstack\n'

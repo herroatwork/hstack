@@ -1,6 +1,6 @@
 ---
 name: principle-encode-the-rule
-description: Encode a repeated instruction as a check, not more prose. Used by mestack when a lesson would otherwise stay in chat.
+description: Encode a repeated instruction as a check, not more prose. Used by hstack when a lesson would otherwise stay in chat.
 user-invocable: false
 ---
 
@@ -13,5 +13,5 @@ will actually load.
 Comments that narrate what the next line does are not encoding. The
 assertion, the type, or the command is the encoding.
 
-If the rule is mestack-wide, it belongs in a principle or playbook,
+If the rule is hstack-wide, it belongs in a principle or playbook,
 in one place.

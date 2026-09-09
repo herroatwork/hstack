@@ -13,8 +13,8 @@ Before starting or resuming, rebuild where the work stands. Hand back
 a short brief. Do not start the work in this skill.
 
 Session files live in the harness adapter
-([mestack/references/grok.md](../mestack/references/grok.md),
-[mestack/references/amp.md](../mestack/references/amp.md)). Do not
+([hstack/references/grok.md](../hstack/references/grok.md),
+[hstack/references/amp.md](../hstack/references/amp.md)). Do not
 invent a Cursor transcript path. Do not read another workspace unless
 the user named it.
 
@@ -26,7 +26,7 @@ the user named it.
    workspace. Say the scope. Do not quietly shrink "all".
 3. Mine this harness's sessions in that window. One or two hits:
    read them yourself. More: parent spawns read-only slices, per
-   [mestack/references/harness.md](../mestack/references/harness.md).
+   [hstack/references/harness.md](../hstack/references/harness.md).
    Order by real modification time, not id. Skip the current session
    and obvious noise. Each slice returns: topic, goal, decisions,
    open threads, corrections, artifacts, with a session id.

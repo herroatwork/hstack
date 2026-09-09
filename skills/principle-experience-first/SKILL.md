@@ -1,6 +1,6 @@
 ---
 name: principle-experience-first
-description: Choose the consumer's result over implementation convenience. Used by mestack when product or API tradeoffs appear.
+description: Choose the consumer's result over implementation convenience. Used by hstack when product or API tradeoffs appear.
 user-invocable: false
 ---
 

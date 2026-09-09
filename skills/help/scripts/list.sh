@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# Print a markdown table of mestack skills from sibling SKILL.md files.
+# Print a markdown table of hstack skills from sibling SKILL.md files.
 set -euo pipefail
 
 here="$(cd "$(dirname "$0")" && pwd -P)"
